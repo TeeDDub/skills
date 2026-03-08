@@ -1,0 +1,11 @@
+{
+  "skill_name": "clip-caption-maker",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "/clip https://youtu.be/C7StaQUWTwc",
+      "expected_output": "Video downloaded, trimmed (or copied), subtitles generated via mlx_whisper, and hardcoded subtitles version created. All files in _media/{slug}/ directory.",
+      "files": []
+    }
+  ]
+}
