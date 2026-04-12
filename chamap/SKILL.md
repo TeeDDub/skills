@@ -7,6 +7,17 @@ description: Use the chamap CLI for directions (car, transit, walking) via T맵 
 
 Use the local `chamap` CLI for directions and place search.
 
+## Installation
+
+```bash
+# Homebrew
+brew tap TeeDDub/tap
+brew install chamap
+
+# 또는 Cargo
+cargo install --git https://github.com/TeeDDub/chamap-cli
+```
+
 ## Quick checks
 
 ```bash
