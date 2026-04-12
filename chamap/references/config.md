@@ -1,4 +1,4 @@
-# tmap config
+# chamap config
 
 설정 관리 명령. 설정 파일: `~/.config/tmap/config.json`
 
@@ -7,7 +7,7 @@
 ### set
 
 ```bash
-tmap config set <KEY> <VALUE>
+chamap config set <KEY> <VALUE>
 ```
 
 사용 가능한 키:
@@ -19,7 +19,7 @@ tmap config set <KEY> <VALUE>
 ### show
 
 ```bash
-tmap config show
+chamap config show
 ```
 
 현재 설정 JSON 출력.
@@ -27,7 +27,7 @@ tmap config show
 ### alias set
 
 ```bash
-tmap config alias set <NAME> <LON,LAT>
+chamap config alias set <NAME> <LON,LAT>
 ```
 
 장소 alias 등록. directions에서 장소명 대신 사용 가능.
@@ -35,13 +35,13 @@ tmap config alias set <NAME> <LON,LAT>
 ### alias list
 
 ```bash
-tmap config alias list
+chamap config alias list
 ```
 
 ### alias remove
 
 ```bash
-tmap config alias remove <NAME>
+chamap config alias remove <NAME>
 ```
 
 ## Config File Format
@@ -65,16 +65,16 @@ tmap config alias remove <NAME>
 
 ```bash
 # API 키 설정
-tmap config set appKey "hT1YUo..."
+chamap config set appKey "hT1YUo..."
 
 # 기본 모드를 대중교통으로 변경
-tmap config set mode transit
+chamap config set mode transit
 
 # 집/회사 등록
-tmap config alias set "집" "127.027,37.498"
-tmap config alias set "회사" "126.972,37.556"
+chamap config alias set "집" "127.027,37.498"
+chamap config alias set "회사" "126.972,37.556"
 
 # 확인
-tmap config show
-tmap config alias list
+chamap config show
+chamap config alias list
 ```

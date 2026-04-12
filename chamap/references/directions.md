@@ -1,11 +1,11 @@
-# tmap directions
+# chamap directions
 
 길찾기 명령.
 
 ## Usage
 
 ```bash
-tmap directions [ORIGIN] [DESTINATION] [FLAGS]
+chamap directions [ORIGIN] [DESTINATION] [FLAGS]
 ```
 
 ORIGIN과 DESTINATION은 장소명, 주소, 또는 등록된 alias. `--origin-coords` / `--dest-coords`로 좌표를 직접 지정하면 생략 가능.
@@ -59,17 +59,17 @@ Base URL: `https://apis.openapi.sk.com`
 
 ```bash
 # 기본 자동차
-tmap directions "서울역" "인천공항"
+chamap directions "서울역" "인천공항"
 
 # 대중교통 상세
-tmap directions "강남역" "홍대입구역" --mode transit
+chamap directions "강남역" "홍대입구역" --mode transit
 
 # 좌표 → 장소명
-tmap directions --origin-coords 127.0,37.5 "강남역" --mode all
+chamap directions --origin-coords 127.0,37.5 "강남역" --mode all
 
 # alias 사용
-tmap directions "집" "회사" --mode all --format brief
+chamap directions "집" "회사" --mode all --format brief
 
 # JSON 파이프
-tmap directions "강남역" "판교역" --mode car --format json | jq '.[] .duration_s'
+chamap directions "강남역" "판교역" --mode car --format json | jq '.[] .duration_s'
 ```

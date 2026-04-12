@@ -1,11 +1,11 @@
-# tmap search
+# chamap search
 
 장소/주소 검색 명령. T맵 POI 통합검색 API 사용.
 
 ## Usage
 
 ```bash
-tmap search <KEYWORD>
+chamap search <KEYWORD>
 ```
 
 ## Output
@@ -26,7 +26,7 @@ tmap search <KEYWORD>
 ## Examples
 
 ```bash
-tmap search "판교역"
-tmap search "카카오 판교"
-tmap search "서울시 강남구 테헤란로 152"
+chamap search "판교역"
+chamap search "카카오 판교"
+chamap search "서울시 강남구 테헤란로 152"
 ```
