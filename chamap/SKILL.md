@@ -107,7 +107,7 @@ chamap directions --origin-coords <lon>,<lat> "<목적지>" --mode all
 
 ## Output format
 
-대중교통은 기본으로 구간별 경로를 보여줌:
+대중교통은 최대 5개 경로를 구간별로 보여줌:
 
 ```
 강남역 → 판교역
@@ -115,13 +115,19 @@ chamap directions --origin-coords <lon>,<lat> "<목적지>" --mode all
 🚗 자동차  24분 | 16.0km | 택시 17,900원
 🚶 도보  3시간 16분 | 15.3km
 
-🚌 대중교통  22분 | 환승 0회 | 2,650원
+🚌 대중교통 경로 1  22분 | 환승 0회 | 2,650원
   도보 6분 → 강남
   신분당선 → 판교
   도보 1분 → 도착
+
+🚌 대중교통 경로 2  35분 | 환승 1회 | 1,450원
+  도보 3분 → 강남역 2호선
+  2호선 3정거장 → 선릉역
+  분당선 7정거장 → 판교역
+  도보 5분 → 도착
 ```
 
-자동차/도보는 `--detail`로 상세 출력.
+대중교통 경로가 1개일 때는 번호 없이 출력. 자동차/도보는 `--detail`로 상세 출력.
 
 ## Flags reference
 
@@ -142,4 +148,6 @@ chamap directions --origin-coords <lon>,<lat> "<목적지>" --mode all
 
 ## References
 
-For detailed command docs, read files in `references/`.
+- `references/directions.md`
+- `references/search.md`
+- `references/config.md`
